@@ -1,7 +1,7 @@
 <template>
-    <div style="">
+    <div class="q-pa-md">
 
-		<div class="q-ml-xl">
+		<!-- <div class="q-ml-xl"> -->
         	<p>Per la senyal de la santa creu ...</p>
         	
 
@@ -9,11 +9,10 @@
 				<li>V.  Obriu-me els llavis, Senyor.</li>
 				<li>R.  I proclamaré la vostra lloança.</li>
 			</ul>
-		</div>
+		<!-- </div> -->
     	
     	<p> ACTE DE CONTRICIÓ <br>
-			Déu meu, em penedeixo de tot cor de tots els meus pecats i els avorreixo, perquè a l'pecar, no només mereixo les penes establertes per tu justament,
-			sinó principalment perquè et vaig ofendre, a tu summe Bé i digne d'amor per sobre de totes les coses. <br>
+			Déu meu, em penedeixo de tot cor de tots els meus pecats i els avorreixo, perquè al pecar, no només mereixo les penes establertes per tu justament, sinó principalment perquè et vaig ofendre, a tu summe Bé i digne d'amor per sobre de totes les coses. <br>
 			Per això proposo fermament, amb ajuda de la teva gràcia, no pecar més en endavant i fugir de tota ocasió de pecat.
 			Amén.	
     	</p>
@@ -27,7 +26,7 @@
 			v-for="(dada, index) in dades" :key="'d'+index"
 			group="somegroup3" 
 			:label="dada.dies" 
-			header-class="text-indigo bg-brown-1" >
+			header-class="text-indigo bg-brown-1 q-mb-xs" >
 		
 			<cmp_misteris :misteris="dada.misteris" />
 		</q-expansion-item>

@@ -45,6 +45,11 @@ module.exports = configure(function (ctx) {
     build: {
       vueRouterMode: 'hash', // available values: 'hash', 'history'
 
+      // this is a configuration passed on
+      // to the underlying Webpack
+      devtool: 'source-map',
+
+
       // transpile: false,
 
       // Add dependencies for transpiling with Babel (Array of string/regex)

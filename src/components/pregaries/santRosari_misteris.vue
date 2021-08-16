@@ -5,12 +5,16 @@
 		</div>
 
 		<q-card-section v-for="(misteri, index) in misteris" :key="misteri">
-			<div class="q-mb-xs"> {{ misteri }} </div>
-			<div class="row q-gutter-md">
+			<div class="text-negative"> {{ misteri }} </div>
+
+      <div class="text-grey-6">Pare nostre...</div>
+      <div class="text-grey-6">10 Avemaries...</div>
+
+			<div class="row q-gutter-md q-mb-sm" >
 				<cmp_unitat v-for="n in 10" :numero="n" :key="n" :ref="'m'+index" />
 			</div>
-			<div>
-				Maria, mare de gràcia i mare de misericòrdia, defensa'ns dels nostres enemics i ampara'ns ara i en la hora de la nostra mort. Amén.</div>
+			<div class="text-grey-6">Gloria...</div>
+			<div>Maria, mare de gràcia i mare de misericòrdia, defensa'ns dels nostres enemics i ampara'ns ara i en la hora de la nostra mort. Amén.</div>
 		</q-card-section>
 	</q-card>
 </template>
@@ -31,13 +35,13 @@ export default {
 
   methods: {
   	resetAll: function() {
-		console.log("this.refs$:");
-		console.log(this.refs$)
+		console.log("this.$refs['m0']:");
+		console.log(this.$refs['m0'])
 		console.log("this:");
 		console.log(this)
 		
   		this.misteris.forEach( function (misteri, index) {
-  			this.refs$["m" + index].forEach( function( unitat ){
+  			this.$refs["m" + index].forEach( function( unitat ){
 				console.log(`unitat ${index} del misteri M-${index}`)
   				unitat.reset()
   			})

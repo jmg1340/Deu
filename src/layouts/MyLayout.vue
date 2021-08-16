@@ -2,7 +2,7 @@
   <q-layout view="lHh Lpr lFf">
     <q-header elevated>
       <q-toolbar
-        color="primary"
+        class="bg-blue-grey-9"
       >
         <q-btn
           flat
@@ -28,7 +28,7 @@
       bordered
       class="bg-grey-1"
     >
-      <q-list>
+      <q-list dense>
         <q-item-label
           header
           class="text-grey-8"
@@ -37,12 +37,20 @@
         </q-item-label>
 
 
-        <q-item to="/missatges">
+        <q-item 
+          to="/missatges"
+          :active="opcio === 'missatges'"
+          active-class="my-menu-opcio"
+          >
           <q-item-section>
             <q-item-label>Déu et vol dir algo</q-item-label>
           </q-item-section>
         </q-item>
-        <q-item to="/pregaries">
+        <q-item 
+          to="/pregaries"
+          :active="opcio === 'pregaries'"
+          active-class="my-menu-opcio"
+          >
           <q-item-section>
             <q-item-label>Pregàries</q-item-label>
           </q-item-section>
@@ -71,15 +79,20 @@
 
      </q-list>
 
-    <q-list>
+    <q-list dense>
 
-        <q-item-label
-          header
-          class="text-grey-8"
+      <q-item-label
+        header
+        class="text-grey-8"
+      >
+        Apunts
+      </q-item-label>
+
+      <q-item 
+        to="/angels"
+        :active="opcio === 'angels'"
+        active-class="my-menu-opcio"
         >
-          Apunts
-        </q-item-label>
-      <q-item to="/angels">
         <q-item-section>
           <q-item-label>Àngels</q-item-label>
         </q-item-section>
@@ -104,7 +117,8 @@ export default {
   name: 'MyLayout',
   data () {
     return {
-      leftDrawerOpen: this.$q.platform.is.desktop
+      leftDrawerOpen: this.$q.platform.is.desktop,
+      opcio: null,
     }
   },
   methods: {
@@ -113,5 +127,9 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+  .my-menu-opcio{
+    color: white;
+    background-color: #F2C037;
+  }
 </style>
