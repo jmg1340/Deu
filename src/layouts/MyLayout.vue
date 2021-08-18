@@ -19,6 +19,15 @@
           <!-- <div slot="subtitle">Running on Quasar v{{ $q.version }}</div> -->
           
         </q-toolbar-title>
+        <div>
+          <q-checkbox 
+          v-model="fosc"
+          color="grey-9"
+          @click="toggleFosc"
+          label="Tema fosc:"
+          left-label
+          />
+        </div>
       </q-toolbar>
     </q-header>
 
@@ -119,16 +128,24 @@ export default {
     return {
       leftDrawerOpen: this.$q.platform.is.desktop,
       opcio: null,
+      fosc: false
     }
   },
   methods: {
-    openURL
+    openURL,
+    toggleFosc() {
+      if (this.fosc) {
+        this.$q.dark.set(true) 
+      } else {
+        this.$q.dark.set(false) 
+      }
+    }
   }
 }
 </script>
 
 <style scoped>
-  .my-menu-opcio{
+  .mmy-menu-opcio{
     color: white;
     background-color: #F2C037;
   }

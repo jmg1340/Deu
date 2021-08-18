@@ -25,13 +25,19 @@
         >
           <jmg_tincSetDeTu class="q-pa-md"></jmg_tincSetDeTu>
       </q-expansion-item>
-<!--       
-      <q-expansion-item group="somegroup" icon="shopping_cart" label="Third">
-        <div>
-          Content
-        </div>
+
+      <q-expansion-item 
+        group="somegroup" 
+        icon="perm_identity" 
+        label="15 minuts en companyia de Jesús"
+        header-class="text-grey-10 bg-teal-1 q-mb-xs"
+        dense
+        popup
+        >
+          <jmg_jesus15minuts class="q-pa-md"></jmg_jesus15minuts>
       </q-expansion-item>
- -->      
+
+
     </q-list>   
 
 
@@ -42,6 +48,7 @@
 <script>
 import jmg_jesusConfioEnTu from "components/missatges/jesusConfioEnTu";
 import jmg_tincSetDeTu from "components/missatges/tincSetDeTu";
+import jmg_jesus15minuts from "components/missatges/Jesus15minuts";
 
 export default {
   // name: 'PageName',
@@ -49,6 +56,7 @@ export default {
   components: {
     jmg_jesusConfioEnTu,
     jmg_tincSetDeTu,
+    jmg_jesus15minuts
   },
       
   // name: 'PageName',

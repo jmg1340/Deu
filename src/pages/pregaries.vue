@@ -73,6 +73,17 @@
          	<jmg_sanacio></jmg_sanacio>
       </q-expansion-item>
 
+      <q-expansion-item 
+        group="somegroup" 
+        icon="explore" 
+        label="Novena a St. Josep"
+        header-class="text-grey-10 bg-green-2 q-mb-xs"
+        dense
+        popup
+        >
+         	<jmg_novenaStJosep></jmg_novenaStJosep>
+      </q-expansion-item>
+
 
 
   </div>
@@ -89,6 +100,7 @@ import jmg_oracioAnimesPurgatori from "components/pregaries/oracioAnimesPurgator
 import jmg_santRosari from "components/pregaries/santRosari";
 import jmg_jesusEtNecessito from "components/pregaries/jesusEtNecessito";
 import jmg_sanacio from "components/pregaries/sanacio";
+import jmg_novenaStJosep from "components/pregaries/novenaStJosep";
 
 export default {
   // name: 'PageName',
@@ -99,7 +111,8 @@ export default {
   	jmg_oracioAnimesPurgatori,
   	jmg_santRosari,
   	jmg_jesusEtNecessito,
-  	jmg_sanacio
+  	jmg_sanacio,
+    jmg_novenaStJosep
   },
   		
 
