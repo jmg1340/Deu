@@ -17,17 +17,20 @@
         <q-toolbar-title>
           Déu
           <!-- <div slot="subtitle">Running on Quasar v{{ $q.version }}</div> -->
-          
         </q-toolbar-title>
-        <div>
-          <q-checkbox 
-          v-model="fosc"
-          color="grey-9"
-          @click="toggleFosc"
-          label="Tema fosc:"
-          left-label
-          />
-        </div>
+				<!-- <div>
+					<q-toggle
+						v-model="fosc"
+						checked-icon="check"
+						color="green"
+						unchecked-icon="clear"
+						@click="toggleFosc"
+						label="Tema fosc:"
+						left-label
+						class="text-weight-light"
+					/>
+				</div> -->
+
       </q-toolbar>
     </q-header>
 
@@ -35,10 +38,28 @@
       v-model="leftDrawerOpen"
       show-if-above
       bordered
-      class="bg-grey-1"
+      class=""
     >
       <q-list dense>
-        <q-item-label
+        
+        <q-item>
+          <!-- <q-item-section class="justify-start"> -->
+						<q-toggle
+							v-model="fosc"
+							checked-icon="check"
+							color="green"
+							unchecked-icon="clear"
+							@click="toggleFosc"
+							label="Tema fosc:"
+							left-label
+							class="text-weight-light"
+						/>
+          <!-- </q-item-section> -->
+        </q-item>
+				<q-separator />
+				
+				
+				<q-item-label
           header
           class="text-grey-8"
         >
@@ -50,15 +71,18 @@
           to="/missatges"
           :active="opcio === 'missatges'"
           active-class="my-menu-opcio"
+					v-ripple
           >
           <q-item-section>
             <q-item-label>Déu et vol dir algo</q-item-label>
           </q-item-section>
         </q-item>
-        <q-item 
+        
+				<q-item 
           to="/pregaries"
           :active="opcio === 'pregaries'"
           active-class="my-menu-opcio"
+					v-ripple
           >
           <q-item-section>
             <q-item-label>Pregàries</q-item-label>
@@ -101,6 +125,7 @@
         to="/angels"
         :active="opcio === 'angels'"
         active-class="my-menu-opcio"
+				v-ripple
         >
         <q-item-section>
           <q-item-label>Àngels</q-item-label>

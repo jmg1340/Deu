@@ -1,7 +1,7 @@
 <template>
   <q-page padding>
 
-	<h3>Àngels</h3>
+	<h5>Àngels</h5>
 
 	<li>1a JEARQUIA:</li>
 	<p><b>Àngels SERAFINS</b>: amor ardent a Deu</p>

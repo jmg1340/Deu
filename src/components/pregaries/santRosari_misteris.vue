@@ -5,7 +5,7 @@
 		</div>
 
 		<q-card-section v-for="(misteri, index) in misteris" :key="misteri">
-			<div class="text-negative"> {{ misteri }} </div>
+			<div :class="{'text-negative': !$q.dark.isActive, 'text-orange': $q.dark.isActive}"> {{ misteri }} </div>
 
       <div class="text-grey-6">Pare nostre...</div>
       <div class="text-grey-6">10 Avemaries...</div>

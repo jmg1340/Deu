@@ -1,5 +1,5 @@
 <template>
-    <div style="padding: 25px;">
+    <div class="q-pa-md">
 
     	<p>Per la senyal, de la Santa Creu, dels nostres enemics, lliura'ns Senyor Déu Nostre. En el
       nom del Pare, del Fill i de l'Esperit Sant. Amén.</p>
@@ -21,7 +21,8 @@
         v-for="(dada, index) in dades" :key="'d'+index"
         group="somegroup3" 
         :label="'Pregària del dia ' + dada.dia" 
-        header-class="text-indigo bg-brown-1 q-mb-xs" >
+        :header-class="{'text-indigo bg-brown-1 q-mb-xs': !$q.dark.isActive, 'text-orange-2 bg-grey-10 q-mb-xs': $q.dark.isActive}"
+				>
         <div class="q-pa-md ">
           {{ dada.text }}
         </div>

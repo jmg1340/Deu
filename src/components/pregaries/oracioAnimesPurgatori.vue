@@ -1,9 +1,9 @@
 <template>
-    <div >
+    <div class="q-pa-md">
 
     	<p>Nostre Senyor va dir a la gran Santa Gertrudis que la següent oració salvaria 1000 ànimes del Purgatori cada vegada que es resés:</p>
     	
-    	<code style="padding: 25px"><p>"Oh Pare Etern, us ofereixo la més preciosa Sang del vostre Diví Fill, Jesús, unit a les misses celebrades avui arreu del món, per totes les Santes Ànimes del Purgatori per tots els pecadors del mòn. Amen".</p>
+    	<code class="text-italic"><p>"Oh Pare Etern, us ofereixo la més preciosa Sang del vostre Diví Fill, Jesús, unit a les misses celebrades avui arreu del món, per totes les Santes Ànimes del Purgatori per tots els pecadors del mòn. Amen".</p>
 		<p>Pels pecadors a l'esglesia universal, per aquells que estan a la propia casa i dintre de la meva familia. Amén</p>
     	</code>
     	<hr>
@@ -11,20 +11,34 @@
     	<p>En el nom del Pare, y del Fill y del Esperit Sant. Amén</p>
     	
 
-    	<q-expansion-item ricon="explore" label="1a DESENA">
-			<p>T'ofereixo, el meu adorat Jesús, en ajuda de les Ànimes del Purgatori, els mèrits dels teus patiments i dolors soferts, per la nostra redempció. I començo contemplant la Sang que trasuà del teu cos, per la tristesa i l'angoixa que et va assaltar a Getsemaní.</p>
+			<p>DESENES (dir 10 vegades la següent pregària)</p>
+			<div class="row q-gutter-md q-mb-sm" >
+				<cmp_unitat v-for="n in 10" :numero="n" :key="n" :ref="'xxx'+ n" />
+			</div>
 
-			<p>Concedeix Senyor el descans etern. I brilli per a elles la llum perpètua. (10 vegades)</p>
+			<div 
+				class="text-italic q-pa-md text-weight-light" 
+				:class="{'bg-grey-2': !$q.dark.isActive, 'bg-grey-10': $q.dark.isActive}"
+				>
 
-			<jmg_rosari></jmg_rosari>
+				<p>T'ofereixo, el meu adorat Jesús, en ajuda de les Ànimes del Purgatori, els mèrits dels teus patiments i dolors soferts, per la nostra redempció. I començo contemplant la Sang que trasuà del teu cos, per la tristesa i l'angoixa que et va assaltar a Getsemaní.</p>
 
-			<p>Pare Nostre, Ave Maria, Glòria</p>
+				<p>Concedeix Senyor el descans etern. I brilli per a elles la llum perpètua. (10 vegades)</p>
 
-			<p>Ànimes santes, ànimes del purgatori, pregueu a Déu per mi i jo pregaré el Pare per a que us doni la glòria del paradís .. Amén</p>
+				<div class="row q-gutter-md q-mb-sm" >
+					<cmp_unitat v-for="n in 10" :numero="n" :key="n" :ref="'yyy'+n" />
+				</div>
 
-			<p>Pare Etern us oferim la Sang, Passió i Mort de Nostre Senyor Jesucrist, els dolors de la Santíssima Verge i els de Sant Josep per la remissió dels nostres pecats, la llibertat de les Ànimes del Purgatori i la conversió dels pecadors. Amén</p>
-		</q-expansion-item>
+				<p class="q-mt-lg">Pare Nostre, Ave Maria, Glòria</p>
 
+				<p>Ànimes santes, ànimes del purgatori, pregueu a Déu per mi i jo pregaré el Pare per a que us doni la glòria del paradís .. Amén</p>
+
+				<p>Pare Etern us oferim la Sang, Passió i Mort de Nostre Senyor Jesucrist, els dolors de la Santíssima Verge i els de Sant Josep per la remissió dels nostres pecats, la llibertat de les Ànimes del Purgatori i la conversió dels pecadors. Amén</p>
+			</div>
+
+
+
+<!-- 
     	<q-expansion-item ricon="explore" label="2a DESENA">
 			<p>T'ofereixo, el meu adorable Jesús, per les Ànimes del Purgatori, la immensa aflicció que et va oprimir el cor en veure que Judes, deixeble Teu, per Tu estimat i afavorit, es va fer perseguidor, i amb petó sacríleg et va trair per lliurar-te en mans de cruels enemics</p>
 
@@ -149,7 +163,7 @@
 			<p>Ànimes santes, ànimes del purgatori, pregueu a Déu per mi i jo pregaré el Pare per a que us doni la glòria del paradís .. Amén</p>
 
 			<p>Pare Etern us oferim la Sang, Passió i Mort de Nostre Senyor Jesucrist, els dolors de la Santíssima Verge i els de Sant Josep per la remissió dels nostres pecats, la llibertat de les Ànimes del Purgatori i la conversió dels pecadors. Amén</p>
-		</q-expansion-item>
+		</q-expansion-item> -->
 
 
 		<h6>Imploració DE LA DIVINA MISERICÒRDIA</h6>
@@ -217,12 +231,14 @@ I 				ell qui redimeix Israel de totes les seves culpes.</p>
 
 <script>
 import jmg_rosari from "components/jmg-rosari";
+import cmp_unitat from "./santRosari_unitat";
 
 export default {
   // name: 'ComponentName',
 
   components: {
   	jmg_rosari,
+		cmp_unitat
   },
 
   data () {

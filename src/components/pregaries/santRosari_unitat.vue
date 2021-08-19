@@ -1,5 +1,5 @@
 <template>
-	<q-card :class="{styActivat: activat}" class="flex flex-center dimensions shadow-6 bordered" @click="activat = !activat">
+	<q-card :class="{'text-negative': !$q.dark.isActive, 'text-orange': $q.dark.isActive, styActivat: activat}" class="flex flex-center dimensions shadow-6 bordered " @click="activat = !activat">
 		{{ numero }}
 	</q-card>
 </template>
@@ -36,7 +36,10 @@ export default {
 	.styActivat {
 		background-color: rgb(128, 255, 0);
 		font-weight: bold;
-		color: black;
+		color: darkblue !important;
 		border: 1px solid rgb(117, 117, 117);
 	}
+
+
+
 </style>

@@ -1,7 +1,7 @@
 <template>
 
   <div>
-    <div style="background-color: khaki; padding: 25px;">
+    <div class="q-pa-md text-italic">
 		<p>Estimat Jesús</p>
 		<p>Davant de les Persones de la Santíssima Trinitat, davant de La nostra Mare del cel i tota la Cort celestial, ofereixo, segons les intencions del teu Cor Eucarístic i les de l'Immaculat Cor de Maria Santíssima, tota la meva vida, totes les meves Santes Misses, Comunions, bones obres, sacrificis i sofriments, unint-los als mèrits de la teva Santíssima Sang i la teva Mort de Creu...</p>
 

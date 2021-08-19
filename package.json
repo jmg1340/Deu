@@ -1,8 +1,8 @@
 {
   "name": "deu",
   "version": "0.0.1",
-  "description": "A Quasar Framework app",
-  "productName": "Quasar App",
+  "description": "Pregàries en català",
+  "productName": "Pregàries",
   "author": "jmg1340 <jordi.miserachs@gmail.com>",
   "private": true,
   "scripts": {

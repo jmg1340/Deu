@@ -26,123 +26,20 @@
 			v-for="(dada, index) in dades" :key="'d'+index"
 			group="somegroup3" 
 			:label="dada.dies" 
-			header-class="text-indigo bg-brown-1 q-mb-xs" >
+			:header-class="{'text-indigo bg-brown-1 q-mb-xs': !$q.dark.isActive, 'text-orange-2 bg-grey-10 q-mb-xs': $q.dark.isActive}"
+			>
 		
 			<cmp_misteris :misteris="dada.misteris" />
 		</q-expansion-item>
 
-	
-		
-		<!-- <ul> -->
-<!-- 			<li>
-				<q-expansion-item group="somegroup3" label="Dilluns i  Dissabte: MISTERIS DE GOIG" header-class="bg-orange-2" >
-					<ol>
-						<li>
-							L’encarnació del Fill de Déu
-							<jmg_rosari></jmg_rosari>
-						</li>
-						<li>
-							Maria visita la seva cosina Elisabet
-							<jmg_rosari></jmg_rosari>
-						</li>
-						<li>
-							El naixement de Jesús a Betlem
-							<jmg_rosari></jmg_rosari>
-						</li>
-						<li>
-							La presentació de Jesús al temple
-							<jmg_rosari></jmg_rosari>
-						</li>
-						<li>
-							Jesús perdut i trobat al temple
-							<jmg_rosari></jmg_rosari>
-						</li>
-					</ol>
-				</q-expansion-item>
-			</li>
-			<li>
-				<q-expansion-item group="somegroup3" label="Dimarts i Divendres: MISTERIS DE DOLOR" header-class="bg-orange-2">
-					<ol>
-						<li>
-							L’oració de Jesús a l’hort de Getsemaní
-							<jmg_rosari></jmg_rosari>
-						</li>
-						<li>
-							Els assots a Jesús lligat a la columna
-							<jmg_rosari></jmg_rosari>
-						</li>
-						<li>
-							La coronació d’espines
-							<jmg_rosari></jmg_rosari>
-						</li>
-						<li>
-							Jesús, amb la creu al coll, camí del Calvari
-							<jmg_rosari></jmg_rosari>
-						</li>
-						<li>
-							La crucifixió i mort del Senyor
-							<jmg_rosari></jmg_rosari>
-						</li>
-					</ol>
-				</q-expansion-item>
-			</li>
-			<li>
-				<q-expansion-item group="somegroup3" label="Dimecres i Diumenge: MISTERIS DE GLÒRIA"header-class="bg-orange-2">
-					<ol>
-						<li>
-							La resurrecció del Fill de Déu
-							<jmg_rosari></jmg_rosari>
-						</li>
-						<li>
-							L’ascensió de Jesús al Cel
-							<jmg_rosari></jmg_rosari>
-						</li>
-						<li>
-							La vinguda de l’Esperit Sant
-							<jmg_rosari></jmg_rosari>
-						</li>
-						<li>
-							L’assumpció de Maria al Cel
-							<jmg_rosari></jmg_rosari>
-						</li>
-						<li>
-							La coronació de Maria com a reina i senyora de cels i terra
-							<jmg_rosari></jmg_rosari>
-						</li>
-					</ol>
-				</q-expansion-item>
-			</li>
-			<li>
-				<q-expansion-item group="somegroup3" label="Dijous: MISTERIS DE LLUM" header-class="bg-orange-2">
-					<ol>
-						<li>
-							El baptisme de Jesús al riu Jordà
-							<jmg_rosari></jmg_rosari>
-						</li>
-						<li>
-							Jesús en les noces de Canà
-							<jmg_rosari></jmg_rosari>
-						</li>
-						<li>
-							Anunci del Regne i invitació a la conversió
-							<jmg_rosari></jmg_rosari>
-						</li>
-						<li>
-							La transfiguració del Senyor
-							<jmg_rosari></jmg_rosari>
-						</li>
-						<li>
-							La institució de l’Eucaristia
-							<jmg_rosari></jmg_rosari>
-						</li>
-					</ol>
-				</q-expansion-item>
-			</li> -->
-		<!-- </ul> -->
 
 
 
-		<q-expansion-item group="somegroup3" icon="explore" label="LETANIES">
+		<q-expansion-item 
+			group="somegroup3" 
+			label="LETANIES"
+			:header-class="{'text-indigo bg-brown-1 q-mb-xs': !$q.dark.isActive, 'text-orange-2 bg-grey-10 q-mb-xs': $q.dark.isActive}"
+			>
 			<ul>
 				<li>V.  Senyor, tingueu pietat.   <br>  R.  Senyor tingueu pietat.</li>
 				<li>V. Crist, tingueu pietat.    <br>  R. Crist, tingueu pietat.</li>
@@ -217,11 +114,9 @@
 				<li>Anyell de Déu que lleveu el pecat del món. <br>R. Tingueu pietat de nosaltres.</li>
 			</ul>
 
-			<p>Pregueu per nosaltres, santa Mare de Déu. <br>R. Perquè siguem dignes de les promeses de nostre Senyor Jesucrist.</p>
-
-
 		</q-expansion-item>
 
+			<p>Pregueu per nosaltres, santa Mare de Déu. <br>R. Perquè siguem dignes de les promeses de nostre Senyor Jesucrist.</p>
 
 
     </div>
