@@ -111,7 +111,7 @@
         -->
 
      </q-list>
-
+<!-- 
     <q-list dense>
 
       <q-item-label
@@ -133,7 +133,7 @@
       </q-item>
 
     </q-list>
-
+ -->
 
      
     </q-drawer>

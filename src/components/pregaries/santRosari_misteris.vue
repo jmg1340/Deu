@@ -4,14 +4,14 @@
 			<q-btn noCaps dense color="negative" @click="resetAll">Reset</q-btn>
 		</div>
 
-		<q-card-section v-for="(misteri, index) in misteris" :key="misteri">
+		<q-card-section v-for="(misteri, indexMisteri) in misteris" :key="misteri">
 			<div :class="{'text-negative': !$q.dark.isActive, 'text-orange': $q.dark.isActive}"> {{ misteri }} </div>
 
       <div class="text-grey-6">Pare nostre...</div>
       <div class="text-grey-6">10 Avemaries...</div>
 
 			<div class="row q-gutter-md q-mb-sm" >
-				<cmp_unitat v-for="n in 10" :numero="n" :key="n" :ref="'m'+index" />
+				<cmp_unitat v-for="n in 10" :numero="n" :key="n" :ref="'m'+indexMisteri+'u'+n" />
 			</div>
 			<div class="text-grey-6">Gloria...</div>
 			<div>Maria, mare de gràcia i mare de misericòrdia, defensa'ns dels nostres enemics i ampara'ns ara i en la hora de la nostra mort. Amén.</div>
@@ -40,12 +40,12 @@ export default {
 		console.log("this:");
 		console.log(this)
 		
-  		this.misteris.forEach( function (misteri, index) {
-  			this.$refs["m" + index].forEach( function( unitat ){
-				console.log(`unitat ${index} del misteri M-${index}`)
-  				unitat.reset()
-  			})
-  		}, this)
+  		for (let m=0; m < 5; m++) {
+				for (var n=1; n <= 10; n++){
+					console.log(`unitat ${n} del misteri`)
+  				this.$refs['m'+ m +'u' + n].reset()
+  			}
+  		}
   	}
   }
 };

@@ -1,8 +1,7 @@
 <template>
     <div class="q-pa-md">
 
-    	<p>Per la senyal, de la Santa Creu, dels nostres enemics, lliura'ns Senyor Déu Nostre. En el
-      nom del Pare, del Fill i de l'Esperit Sant. Amén.</p>
+    	<p>Per la senyal, de la Santa Creu...</p>
 
     	<p>Oh gloriosíssim Pare de Jesús, Espós de Maria. Patriarca i Protector de la Santa
       Església, a qui el Pare Etern va confiar la cura de governar, regir i defensar en la
@@ -34,7 +33,7 @@
 
     	<p>Oh custodi i pare de Verges Sant Josep que a la fidel custòdia van ser encomanades la
       mateixa innocència de Crist Jesús i la Verge de les verges, Maria; per aquestes dues
-      Queridísimas penyores, Jesús i Maria, et prego i suplico em concedeixis, que preservat jo de tota impuresa, servir sempre castísimamente amb ànima neta, cor pur i cos cast a Jesús i a Maria. Amén.</p>
+      estimadíssimes penyores, Jesús i Maria, et prego i suplico em concedeixis, que preservat jo de tota impuresa, servir sempre castísimament amb ànima neta, cor pur i cos cast a Jesús i a Maria. Amén.</p>
 
       <br>
 

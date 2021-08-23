@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="q-pa-md">
 
 	<p>El meu bon Jesús, lloat i adorat siguis, t'estimo amb tot el meu cor i agraeixo la teva entrega per nosaltres a la Creu.</p>
 	<p>Vinc a tu sabent que estàs sempre al nostre costat,
