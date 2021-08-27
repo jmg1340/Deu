@@ -77,7 +77,7 @@
             <q-item-label>Déu et vol dir algo</q-item-label>
           </q-item-section>
         </q-item>
-        
+<!--         
 				<q-item 
           to="/pregaries"
           :active="opcio === 'pregaries'"
@@ -86,6 +86,17 @@
           >
           <q-item-section>
             <q-item-label>Pregàries</q-item-label>
+          </q-item-section>
+        </q-item>
+ -->
+				<q-item 
+          to="/pregariesmenu"
+          :active="opcio === 'pregariesmenu'"
+          active-class="my-menu-opcio"
+					v-ripple
+          >
+          <q-item-section>
+            <q-item-label>Pregàries - menú</q-item-label>
           </q-item-section>
         </q-item>
 

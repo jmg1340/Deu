@@ -22,6 +22,20 @@ const routes = [
     ]
   },
   {
+    path: '/pregariesmenu',
+    component: () => import('layouts/MyLayout.vue'),
+    children: [
+      { path: '', component: () => import('pages/pregaries-menu.vue') }
+    ]
+  },
+  {
+    path: '/pregaria/:numero',
+    component: () => import('layouts/MyLayout.vue'),
+    children: [
+      { path: '', component: () => import('pages/pregaria.vue'), props: true }
+    ]
+  },
+  {
     path: '/angels',
     component: () => import('layouts/MyLayout.vue'),
     children: [
