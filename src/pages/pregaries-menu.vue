@@ -1,17 +1,18 @@
 <template>
-  <div class="q-pa-sm q-ma-xl">
+  <div class="q-pa-lg">
 		
 		<div class="text-h5 text-center text-weight-light q-my-md">Pregàries</div>
 
-		<q-list 
-			bordered 
+		<q-list  
 			separator 
-			:class="{'text-grey-10 bg-green-1': !$q.dark.isActive, 'text-orange bg-grey-9': $q.dark.isActive}"
+			dense		
 			>
       <q-item 
 				v-for="(pregaria, index) in aPregaries" :key="index"
 				:to="'/pregaria/' + pregaria.numero"
-				clickable 
+				clickable
+				:class="{'text-grey-10 bg-green-2': !$q.dark.isActive, 'text-orange bg-grey-9': $q.dark.isActive}"
+				class="q-mb-xs"
 				v-ripple>
         	<q-item-section>{{pregaria.nom}}</q-item-section>
       </q-item>

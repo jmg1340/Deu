@@ -35,10 +35,6 @@ export default {
 
   methods: {
   	resetAll: function() {
-		console.log("this.$refs['m0']:");
-		console.log(this.$refs['m0'])
-		console.log("this:");
-		console.log(this)
 		
   		for (let m=0; m < 5; m++) {
 				for (var n=1; n <= 10; n++){
