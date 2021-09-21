@@ -33,8 +33,7 @@
 
 			<div class="q-mb-md text-right"><q-btn noCaps dense color="negative" @click="resetAll">Reset</q-btn></div>	
 
-    	<p class="q-mt-md">Oh custodi i pare de Verges Sant Josep que a la fidel custòdia van ser encomanades la
-      mateixa innocència de Crist Jesús i la Verge de les verges, Maria; per aquestes dues
+    	<p class="q-mt-md">Oh custodi i pare de Verges Sant Josep que a la fidel custòdia van ser encomanades la mateixa innocència de Crist Jesús i la Verge de les verges, Maria; per aquestes dues
       estimadíssimes penyores, Jesús i Maria, et prego i suplico em concedeixis, que preservat jo de tota impuresa, servir sempre castíssimament amb ànima neta, cor pur i cos cast a Jesús i a Maria. Amén.</p>
 
       <br>
@@ -81,7 +80,7 @@ export default {
     return {
 
       dades: [
-        { dia: 1, fet: false, text: "Oh benigníssim Jesús així com vas consolar el pare estimat en les perplexitats i incerteses que va tenir, dubtant si abandonar a la teva Santíssima Mare la seva dona, així et supliquem humilment per intercessió de Sant Josep ens concediu molta prudència i encert en tots els casos dubtosos i angoixes de la nostra vida, perquè sempre encertem amb el teu santíssima  voluntat."},
+        { dia: 1, fet: false, text: "Oh benigníssim Jesús així com vas consolar el pare estimat en les perplexitats i incerteses que va tenir, dubtant si abandonar a la teva Santíssima Mare la seva dona, així et supliquem humilment per intercessió de Sant Josep ens concediu molta prudència i encert en tots els casos dubtosos i angoixes de la nostra vida, perquè sempre encertem amb la teva santíssima  voluntat."},
         { dia: 2, fet: false, text: "Oh benigníssim Jesús, així com vas consolar el pare estimat en la pobresa i desempar de Betlem, amb el teu naixement, i amb els càntics dels Àngels i visites dels pastors,així també et supliquem humilment per intercessió de Sant Josep, que ens concedeixis portar amb paciència la nostra pobresa i desempar en aquesta vida, i que alegres el nostre esperit amb la teva presència i la teva gràcia, i l'esperança de la glòria."},
         { dia: 3, fet: false, text: "Oh benigníssim Jesús, així com vas consolar al teu estimat pare en el dolorós misteri de la Circumcisió, rebent d'ell el dolç nom de Jesús, així et supliquem humilment, per intercessió de Sant Josep, ens concediu pronunciar sempre amb amor i respecte el teu santíssim nom, portar-lo en el cor, honrar a la vida, i professar amb obres i paraules que tu vas ser el nostre Salvador i Jesús."},
         { dia: 4, fet: false, text: "Oh benigníssim Jesús, així com vas consolar al teu pare estimat de la pena que li va causar la profecia de Simeó, mostrant-li el innombrable coral dels Sants, així et supliquem humilment, per intercessió de Sant Josep que ens concedeixis la gràcia de ser d'aquells per als que el tu serveixes, no de ruïna, sinó de resurrecció, i que corresponguem fidelment a la teva gràcia per a que anem a la teva glòria."},
