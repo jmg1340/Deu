@@ -10,17 +10,20 @@
 				<li>R.  I proclamaré la vostra lloança.</li>
 			</ul>
 		<!-- </div> -->
-    	
-    	<p> ACTE DE CONTRICIÓ <br>
-			Déu meu, em penedeixo de tot cor de tots els meus pecats i els avorreixo, perquè al pecar, no només mereixo les penes establertes per tu justament, sinó principalment perquè et vaig ofendre, a tu summe Bé i digne d'amor per sobre de totes les coses. <br>
-			Per això proposo fermament, amb ajuda de la teva gràcia, no pecar més en endavant i fugir de tota ocasió de pecat.
-			Amén.	
-    	</p>
-    	
+    	<q-card>
+				<q-card-section> ACTE DE CONTRICIÓ <br>
+				Déu meu, em penedeixo de tot cor de tots els meus pecats i els avorreixo, perquè al pecar, no només mereixo les penes establertes per tu justament, sinó principalment perquè et vaig ofendre, a tu summe Bé i digne d'amor per sobre de totes les coses. <br>
+				Per això proposo fermament, amb ajuda de la teva gràcia, no pecar més en endavant i fugir de tota ocasió de pecat.
+				Amén.	
+				</q-card-section>
+    	</q-card>
+
     	<p>Glòria...</p>
     	
-    	<p>OFERIMENT:<br> Senyor Déu nostre, dirigiu i encamineu tots els nostres pensaments, paraules i obres a major honra i glòria vostra. I vós, Verge Santíssima, obtingueu-nos del vostre Fill que amb tota atenció i devoció puguem dir el vostre Santíssim Rosari, el qual us oferim per l'exaltació de la santa Fe catòlica, per les nostres necessitats espirituals i temporals, i pel bé i sufragi dels vius i difunts que siguin més del vostre grat i de la nostra principal obligació.</p>
-
+			<q-card class="q-mb-md">
+				<q-card-section>OFERIMENT:<br> Senyor Déu nostre, dirigiu i encamineu tots els nostres pensaments, paraules i obres a major honra i glòria vostra. I vós, Verge Santíssima, obtingueu-nos del vostre Fill que amb tota atenció i devoció puguem dir el vostre Santíssim Rosari, el qual us oferim per l'exaltació de la santa Fe catòlica, per les nostres necessitats espirituals i temporals, i pel bé i sufragi dels vius i difunts que siguin més del vostre grat i de la nostra principal obligació.
+				</q-card-section>	
+			</q-card>
 		
 		<q-expansion-item 
 			v-for="(dada, index) in dades" :key="'d'+index"
@@ -116,7 +119,12 @@
 
 		</q-expansion-item>
 
-			<p>Pregueu per nosaltres, santa Mare de Déu. <br>R. Perquè siguem dignes de les promeses de nostre Senyor Jesucrist.</p>
+			<p>Déu et saluda, Reina i mare de misericòrdia, vida dolçura i esperança nostra. Déu et saluda.<br/>
+				A tu ens dirigim els desterrats fills d'Eva. A tú suspirem gemint i plorant en aquesta vall de llàgrimes.<br/>
+				Sigues doncs advocada nostra gireu cap a nosaltres els teus ulls, tan misericordiosos, i després d'aquest desterrament mostra'ns a Jesús, fruït beneït del teu ventre.<br/>
+				Oh clementíssima, oh pietosa, oh dolça sempre Verge Maria.<br />
+				Pregueu per nosaltres, santa Mare de Déu Per a que siguem dignes de les promeses de nostre Senyor Jesucrist.
+			</p>
 
 
     </div>
@@ -126,14 +134,11 @@
 
 <script>
 import cmp_misteris from "./santRosari_misteris";
-
 export default {
   // name: 'ComponentName',
-
   components: {
   	cmp_misteris,
   },
-
   data () {
     return {
     	dades:
@@ -175,7 +180,6 @@ export default {
 	    			"5. La institució de l’Eucaristia"]
     		}
     	]
-
     }
   }
 }
