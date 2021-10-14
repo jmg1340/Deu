@@ -11,19 +11,19 @@
 			</ul>
 		<!-- </div> -->
     	<q-card>
-				<q-card-section> ACTE DE CONTRICIÓ <br>
+				<q-card-section class="q-mb-md"> ACTE DE CONTRICIÓ <br>
 				Déu meu, em penedeixo de tot cor de tots els meus pecats i els avorreixo, perquè al pecar, no només mereixo les penes establertes per tu justament, sinó principalment perquè et vaig ofendre, a tu summe Bé i digne d'amor per sobre de totes les coses. <br>
 				Per això proposo fermament, amb ajuda de la teva gràcia, no pecar més en endavant i fugir de tota ocasió de pecat.
 				Amén.	
 				</q-card-section>
     	</q-card>
 
-    	<p>Glòria...</p>
+    	<p class="q-mt-md">Glòria...</p>
     	
-			<q-card class="q-mb-md">
-				<q-card-section>OFERIMENT:<br> Senyor Déu nostre, dirigiu i encamineu tots els nostres pensaments, paraules i obres a major honra i glòria vostra. I vós, Verge Santíssima, obtingueu-nos del vostre Fill que amb tota atenció i devoció puguem dir el vostre Santíssim Rosari, el qual us oferim per l'exaltació de la santa Fe catòlica, per les nostres necessitats espirituals i temporals, i pel bé i sufragi dels vius i difunts que siguin més del vostre grat i de la nostra principal obligació.
-				</q-card-section>	
-			</q-card>
+		<q-card class="q-mb-md">
+			<q-card-section>OFERIMENT:<br> Senyor Déu nostre, dirigiu i encamineu tots els nostres pensaments, paraules i obres a major honra i glòria vostra. I vós, Verge Santíssima, obtingueu-nos del vostre Fill que amb tota atenció i devoció puguem dir el vostre Santíssim Rosari, el qual us oferim per l'exaltació de la santa Fe catòlica, per les nostres necessitats espirituals i temporals, i pel bé i sufragi dels vius i difunts que siguin més del vostre grat i de la nostra principal obligació.
+			</q-card-section>	
+		</q-card>
 		
 		<q-expansion-item 
 			v-for="(dada, index) in dades" :key="'d'+index"
@@ -39,12 +39,12 @@
 
 
 		<q-expansion-item 
-			group="somegroup3" 
+			group="somegroup" 
 			label="LETANIES"
 			:header-class="{'text-indigo bg-brown-1 q-mb-xs': !$q.dark.isActive, 'text-orange-2 bg-grey-10 q-mb-xs': $q.dark.isActive}"
 			>
 			<ul>
-				<li>V.  Senyor, tingueu pietat.   <br>  R.  Senyor tingueu pietat.</li>
+				<li>V. Senyor, tingueu pietat.   <br>  R.  Senyor tingueu pietat.</li>
 				<li>V. Crist, tingueu pietat.    <br>  R. Crist, tingueu pietat.</li>
 				<li>V. Senyor, tingueu pietat.   <br>  R. Senyor, tingueu pietat.</li>
 				<li>V. Crist, oïu-nos.   <br>  R. Crist, oïu-nos.</li>
@@ -121,9 +121,9 @@
 
 			<p>Déu et saluda, Reina i mare de misericòrdia, vida dolçura i esperança nostra. Déu et saluda.<br/>
 				A tu ens dirigim els desterrats fills d'Eva. A tú suspirem gemint i plorant en aquesta vall de llàgrimes.<br/>
-				Sigues doncs advocada nostra gireu cap a nosaltres els teus ulls, tan misericordiosos, i després d'aquest desterrament mostra'ns a Jesús, fruït beneït del teu ventre.<br/>
+				Sigues doncs advocada nostra i gira cap a nosaltres els teus ulls misericordiosos, i després d'aquest desterrament mostra'ns a Jesús, fruït beneït del teu ventre.<br/>
 				Oh clementíssima, oh pietosa, oh dolça sempre Verge Maria.<br />
-				Pregueu per nosaltres, santa Mare de Déu Per a que siguem dignes de les promeses de nostre Senyor Jesucrist.
+				Prega per nosaltres, santa Mare de Déu Per a que siguem dignes de les promeses de nostre Senyor Jesucrist.
 			</p>
 
 

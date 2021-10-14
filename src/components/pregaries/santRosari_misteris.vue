@@ -23,6 +23,7 @@
 			</div>
 			<div class="text-grey-6">Gloria...</div>
 			<div>Maria, mare de gràcia i mare de misericòrdia, defensa'ns dels nostres enemics i ampara'ns ara i en la hora de la nostra mort. Amén.</div>
+			<div>Oh Jesús, perdona els nostres pecats, allibera'ns del foc de l'infern i porta atotes les ànimes al cel especialment les més necessitades de la teva misericòrdia</div>
 		</q-card-section>
 	</q-card>
 </template>

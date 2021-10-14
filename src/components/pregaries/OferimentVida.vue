@@ -39,7 +39,7 @@
 				<li>El mateix dia de l'oferiment sortiran del Purgatori tots els difunts de la família.</li>
 				<li>A la mort estaré al seu costat i portaré les seves ànimes a la Presència de Déu sense passar pel Purgatori.</li>
 				<li>Els seus noms estaran inscrits en el Cor de Jesús i en el Cor Immaculat de Maria.</li>
-				<li>Salvaran moltes ànimes de l'eterna condemnació per aquest oferiment unit als mèrits de Crist. El mèrit de les seves sacrificis beneficiarà les ànimes fins a la fi del món.</li>
+				<li>Salvaran moltes ànimes de l'eterna condemnació per aquest oferiment unit als mèrits de Crist. El mèrit dels seus sacrificis beneficiarà les ànimes fins a la fi del món.</li>
 			</ol>
 		</p>
     </div>
